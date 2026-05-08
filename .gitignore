@@ -1,0 +1,30 @@
+# Claude Code
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LaTeX
+apostila_ml.aux
+apostila_ml.log
+apostila_ml.out
+apostila_ml.toc
+apostila_ml.lof
+apostila_ml.lot
+apostila_ml.idx
+apostila_ml.ilg
+apostila_ml.ind
+apostila_ml.synctex.gz
+
+# OS
+.DS_Store
+Thumbs.db

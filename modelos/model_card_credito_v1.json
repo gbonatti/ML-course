@@ -1,0 +1,36 @@
+{
+  "modelo": "Gradient Boosting Classifier v1.0",
+  "propósito": "Prever probabilidade de inadimplência em solicitações de crédito pessoal",
+  "desenvolvido_em": "2024-01-15",
+  "equipe": "Squad de Risco de Crédito",
+  "versão": "1.0.0",
+  "dados_treinamento": {
+    "período": "Jan/2022 – Dez/2023",
+    "n_observações": 50000,
+    "positivos": "25% (inadimplentes)",
+    "features": 7,
+    "exclusões": "Menores de 18 anos, dados com >30% missing"
+  },
+  "performance_geral": {
+    "AUC_ROC": 0.5596,
+    "KS": 0.42,
+    "Gini": 0.1191,
+    "conjunto_validação": "holdout 25% + validação temporal 2024 Q1"
+  },
+  "limitações": [
+    "Não deve ser usado para PMEs ou empréstimos consignados",
+    "Performance pode degradar em períodos de crise econômica",
+    "Dados de treinamento até Dez/2023; retreinar semestralmente"
+  ],
+  "considerações_éticas": [
+    "Raça/etnia e religião não são usadas diretamente",
+    "Verificar anualmente disparidade de score por gênero e região",
+    "Clientes têm direito de questionar decisões automatizadas"
+  ],
+  "monitoramento": {
+    "PSI_alerta": 0.1,
+    "PSI_critico": 0.2,
+    "frequência_revisão": "Mensal",
+    "responsável": "Equipe de Model Risk"
+  }
+}
